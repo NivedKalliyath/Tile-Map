@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="1">
  <tileset firstgid="1" name="tilemap" tilewidth="16" tileheight="16" spacing="1" tilecount="486" columns="27">
   <image source="kenney_rpg-urban-pack/Tilemap/tilemap.png" width="458" height="305"/>
  </tileset>
@@ -122,9 +122,30 @@
  <tileset firstgid="15088" name="Ardentryst-6c" tilewidth="14" tileheight="18" tilecount="1" columns="1">
   <image source="Ardentryst-Numbers/Ardentryst-Numbers/Ardentryst-6c.png" width="14" height="18"/>
  </tileset>
+ <tileset firstgid="15089" name="Lights" tilewidth="4" tileheight="2" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image source="maroon.jpg" width="4" height="2"/>
+  </tile>
+  <tile id="1">
+   <image source="red.png" width="4" height="2"/>
+   <animation>
+    <frame tileid="1" duration="500"/>
+    <frame tileid="0" duration="500"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="15091" name="Blue Roof" tilewidth="16" tileheight="16" tilecount="1" columns="1">
+  <image source="Blue Roof.png" width="16" height="16"/>
+ </tileset>
  <layer id="8" name="Road" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJztl1tO5EAMRZv9/8M6EG+xBWjx3A/56BYopFJ2+VE3qXskazSDY9/KaZKew0HO9wUrujT0zjpCtfroxXx/6TzanJqzSXoz7tOefWiukfTRB330gD7+76AP+phnWMpEH/lk+JB8b6r10ofdx9I8SUlyRjCCj6WZUgdrOSMY0UdtjzRnBKP5KP07ffzPsJSJPvLJ8KHZb+3zyILg45xhyUdkTvooZ7B+B7Ls9+rzyLKFir4HXn0eWZArGlQfKNAHfdBHmUwfmj1oebLIfo9Ld9BHXK6W+fQRk6t1Nn3457LMpQ/fXNaZ9BHjo9f1mh178lG6TjJvrSf6+cmyFX1gFX1glTfR81tBzXUmMhfiuenjd/7l9OfVqXpBH7/zr+mjCn1gQR9Y0AcW9IEFfWAR+f9G+tBDH1jweYUFfWBBH1jQBxb0gQV9YEEfWNAHFvSBBX1gQR9Y0AcWmT5e6KNKpg+veV6Z6MNnnlemkX2g1P2fZ+YDQJ5SjeLjONXjVE9TvQHkoY/D4XOqL/pYrZupblfqrrF3Xu9TvZ7qA+C+9/JR+/lRUC29890Z59aQ6Y0+6qD68K7njfmY/z0im8aHZp52f2knoo+MXT18bO15lbmLPsqM4GNtLn3Ev8/XZtZ29maPPiSeSjt7syUfLdfUzkcffu8PyR76qO/K9uHVmwF90Ad91PNYrtfuoo96Huv1khn0UcfTh+bsLT+PzrRHH9LvltJ5kXk89nmD7sNa2vy9ifBhfR5luVja1ZsoH0szLZ/bCBdLe3oT6WM+23pu672XzOyNNU/051e6pxX60O+pXeP5O7d1sp7vmhyW/FvH+t7t4W4t/9ahDyw091Nzbu19sjocwcdab+tM79+rUXzUemvXa/ukvbX8W0fzuYx8d1j30Ef+fRjRh7QXhT378OzNYo8+NL1o596bDw2I56YPrHPTB9a59+bjByuM8y4=
+   eJztmA1OKzEMhMu1OOjjHAgeP+IKgN7j5yRcgEViRdluEju2k9nsjDRCbR17kq/dbTkc5Ho/w/PH+W/3zmO1Rr2zkkeaRy8t5y95pOqkfSVrJLUtzmlkHpo1kjryII8eIo/TGeRBHssMs8hjfB6S702lWvKw8zheZ/3NQB4+PI7XahnkckZojzzWniOP0wyzInmknieP0wyzyGN8Hpr51jqPLAg85gxrPCJzkkc6w5dz/2+PnO9V55FlC44+A686jyzIjhYqDxSRB3mQR1oteWjmoOVppdb3cekM8ojLVdOfPGJy1fYmD/9clr7k4ZvL2pM8Ynj0Wq+ZMRKP1DpJv1xN9PWTtpk8sEweWPZWdP9aoeaaFZkLcd/k8dP/z/T34tu9RB4//S/JoyjywBJ5YIk8sEQeWCIPLEX+biQPvcgDS7xeYYk8sEQeWCIPLJEHlsgDS+SBJfLAEnlgiTywRB5YIg8steTxSB5FteTh1c8rE3n49PPKtGceKL45umbeAuRJeS88niffTb6f/A8gD3kcDq+T38gj66vJ1xn/raxd+v/kp2+/AJx7Lx6l158Frqldzm6xb41aciOPslB5ePthYzyWjyOyaXho+mnnp2Yi8mgxqwePrV2vWs4ij7T2wCPXlzzi7+e5nqWZvTUiDwmn1Mze2hKPmjWl/ZGH3/1DMoc8yrNa8/CqbSHyIA/yKOexrNfOIo9yHut6SQ/yKMuTh2bvNa9HZxqRh/S7pbRfZB6Ped5C52G1Nn9vRfCwXo9asVib1VtRPNZ6Wt63ESzW5vRWJI9lb+u+rWcv6dlb1jzR71/pnFqRh35OaY3nZ27ranV91+Sw5N+6rPfdHuxy+bcu8sCS5jw1+9aek5XhHnjkamt7en+u9sKjVFtar62T1pbyb12a92XkvcM6hzzan8MeeUhrUTQyD8/aVhqRh6YWbd+j8dAIcd/kgbVv8sDa92g8PgH3WApZ
+  </data>
+ </layer>
+ <layer id="9" name="Lights" width="100" height="100" offsetx="6.18182" offsety="-6.18182">
+  <data encoding="base64" compression="zlib">
+   eJzt3DsOwjAQRdGsi/2viBVQUhAzFhD7GZ9TUeRDMXODhJTj6He/jf/cc+y773nF/UacB/BP9A1YhV4Bq9ArYBV6BaxCr4BVJPbK/53AmcQe6BVwJrEHegWcSeyBXgHk02cqnuekMH9U9IoU5o+KXpHC/FHRK1KYPyp6RQrzR0WvSGH+qOgVKcwfFb0ihfmjolevvnkP9S+v8cn5Pe+yro6Z9a5p8wd9Znc7vVcjzLov65i9p+SZNQeJvbIf0JawH7Pvqwu0JOwHWfTqyX5A2877kdgrsuy8H2RJ7JX9gLad9yOxV2TZeT/Iktgr+wFt9gPa7Acp/L6CNvsBrCKxV2Tx/CBFYq/sBynsx/UeBBrQmQ==
   </data>
  </layer>
  <layer id="1" name="Ground" width="100" height="100">
